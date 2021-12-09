@@ -19,7 +19,6 @@ namespace act1
 
                 Console.Write("Birthday: ");
                 string birthDate = Console.ReadLine();
-                string[] arrBirthDate = birthDate.Split(',');
 
                 Console.Write("Current Year: ");
                 string currentYear = Console.ReadLine();
@@ -27,7 +26,7 @@ namespace act1
 
                 try
                 {
-                    int age = int.Parse(currentYear) - int.Parse(arrBirthDate[1]);
+                    int age = int.Parse(currentYear) - date.Year.Parse(birthDate);
 
                     Console.WriteLine("************OUTPUT************");
                     Console.WriteLine("Name : " + name);
