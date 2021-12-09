@@ -26,7 +26,8 @@ namespace act1
 
                 try
                 {
-                    int age = int.Parse(currentYear) - date.Year.Parse(birthDate);
+                    
+                    int age = int.Parse(currentYear) - DateTime.Parse(birthDate).Year;
 
                     Console.WriteLine("************OUTPUT************");
                     Console.WriteLine("Name : " + name);
